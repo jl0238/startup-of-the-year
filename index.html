@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!--
+      - d-flex is using bootstrap's flexbox
+      - justify-content-center (works with d-flex) is to align the contents in the main axis (x-axis in this case) to the center
+      - align-items-center (works with d-flex) is to align the contents in the cross axis (y-axis in this case) to the center
+      - h-100 is bootstrap's class that sets the div to span 100% of the body's height
+    -->
+    <!-- container is bootstrap's layout class to layout rows and columns-->
+    <div class="container d-flex justify-content-center align-items-center h-100">
+      <div class="row">
+        <!--
+          - col-12 (works with bootstrap's container.row) needed for column to span all of the horizontal space
+        -->
+        <div class="col-12">
+          <!--
+            - text-center is bootstrap's class to align contents horizontally to the center within the header class
+          -->
+          <header class="text-center">
+            <!--
+              - text-uppercase is bootstrap's class to capitalize all text
+            -->
+            <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+          </header>
+          <div class="buffer">
+          </div>
+          <section class="text-center">
+            <hr>
+            <!-- 
+              - btn-primary is one of bootstraps button class
+             -->
+            <a href="https://mailchi.mp/6609ca6196d7/testaudience">
+              <button class="btn btn-primary btn-xl">Find out more</button>
+            </a>
+          </section>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
